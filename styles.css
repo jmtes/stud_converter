@@ -398,7 +398,7 @@ select {
 }
 
 select:focus {
-  outline: none;
+  outline: 1px solid black;
 }
 
 label {
@@ -449,18 +449,20 @@ button {
   cursor: pointer;
 }
 
+button:focus {
+  outline: 1px solid black;
+}
+
 #result-box {
   padding: 2.4rem;
 }
 
-#loader {
-  width: 48px;
+.result {
   display: none;
 }
 
-.result {
+.result span {
   font-weight: bold;
   font-size: 1.2rem;
-  display: none;
 }
 /*# sourceMappingURL=styles.css.map */
