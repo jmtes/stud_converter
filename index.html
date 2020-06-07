@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Roblox Stud Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      integrity="sha384-ujbKXb9V3HdK7jcWL6kHL1c+2Lj4MR4Gkjl7UtwpSHg/ClpViddK9TI7yU53frPN"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>roblox stud converter</h1>
+      <!-- <p id="conversion">feet -> studs <i class="fas fa-exchange-alt"></i></p> -->
+      <select name="conversion" id="conversion">
+        <option value="">select unit to convert</option>
+        <option value="feet">feet</option>
+        <option value="inches">inches</option>
+        <option value="meters">meters</option>
+        <option value="centimeters">centimeters</option>
+      </select>
+      <label for="units">Units</label>
+      <input
+        type="number"
+        name="units"
+        id="units"
+        placeholder="can you are enter number"
+      />
+      <button type="submit">convert to studs</button>
+      <div id="result-box">
+        <img src="./loader.gif" alt="" id="loader" />
+        <p class="result">
+          <span id="before" class="result">5 studs</span> =
+          <span id="after" class="result">4 feet</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
